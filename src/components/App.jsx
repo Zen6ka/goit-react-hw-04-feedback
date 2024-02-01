@@ -1,4 +1,4 @@
-import { Component, useState } from 'react';
+import { useState } from 'react';
 import { GlobalStyle } from './GlobalStyle';
 
 import { Main } from './Layout';
@@ -23,13 +23,13 @@ export const App = () => {
 				good: setGood,
 				neutral: setNeutral,
 				bad: setBad,
-			};
+		};
 	
 			const setFeedback = feedbackTypes[evt];
 	
 			if (setFeedback) {
 				setFeedback(prevState => prevState + 1);
-			}
+		}
 		};
 	
 		const countTotalFeedback = () => good + neutral + bad;
